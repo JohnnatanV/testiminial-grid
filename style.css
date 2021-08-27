@@ -18,6 +18,89 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+body {
+  background: var(--light-gray);
+}
+
+/* MAIN */
+.container {
+  margin: 12% 10%; /* 20%*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3em 3em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "card-1 card-1 card-2 card-5"
+    "card-3 card-4 card-4 card-5";
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-1 {
+  grid-area: card-1;
+}
+
+.card-2 {
+  grid-area: card-2;
+}
+
+.card-3 {
+  grid-area: card-3;
+}
+
+.card-4 {
+  grid-area: card-4;
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card__color-violet {
+  background: var(--moderate-violet);
+}
+
+.card__color-grayish {
+  background: var(--dark-grayish-blue);
+}
+
+.card__color-blackish {
+  background: var(--dark-blackish-blue);
+}
+
+.card__color-white {
+  background: hsl(0, 0%, 100%);
+}
+
+.card__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card__user-photo img {
+  border-radius: 50%;
+  width: 3.2em;
+  border: 4px solid var(--light-gray);
+}
+
+.card__user-name {
+  margin: 15px;
+}
+
+.card__highlight {
+  margin: 20px 0;
+}
+
+.card__testimony {
+  font-size: 1em;
+  height: 90%;
+}
+
 /* FOOTER */
 .attribution {
   font-size: 11px;
