@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-  display: none;
+  color: var(--light-gray);
 }
 
 /* MAIN */
